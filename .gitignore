@@ -383,6 +383,7 @@ tmp/
 # Except distribution archives
 !dist/*.zip
 !release/*.zip
+!charts_images.zip
 
 # ================================
 # Performance & Monitoring
