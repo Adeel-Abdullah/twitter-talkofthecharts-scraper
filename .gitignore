@@ -1,0 +1,486 @@
+# Chart Data Extraction & Processing Pipeline - .gitignore
+
+# ================================
+# Python
+# ================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ================================
+# Project-Specific Data Files
+# ================================
+
+
+# Processed data directories
+chart_dfs/
+sorted_images/
+processed_data/
+output/
+
+# CSV and Excel files (data outputs)
+*.csv
+*.xlsx
+*.xls
+
+# Except template/example files
+!Template*.csv
+!Template*.xlsx
+!example*.csv
+!example*.xlsx
+!sample*.csv
+!sample*.xlsx
+
+# ================================
+# MusicBrainz & API Caches
+# ================================
+
+# MusicBrainz checkpoint directories
+mb_checkpoints/
+mb_checkpoints_async/
+
+# Cache files
+*.pkl
+*.pickle
+*_cache/
+cache/
+
+# API response files
+api_responses/
+*.json.cache
+
+# ================================
+# Twitter & Authentication
+# ================================
+
+# Environment files with credentials
+.env
+.env.local
+.env.production
+.env.staging
+.env.development
+
+# Twitter cookies and authentication
+twitter_cookies.json
+cookies.json
+auth_tokens.json
+
+# Checkpoint files
+scraper_checkpoint.json
+*.checkpoint
+
+# ================================
+# OCR & Machine Learning
+# ================================
+
+# Model files and weights
+*.pth
+*.pt
+*.h5
+*.hdf5
+*.model
+*.weights
+
+# OCR output files
+ocr_output/
+raw_ocr_output.csv
+*_ocr_*.csv
+
+# Temporary OCR files
+temp_ocr/
+*.tmp
+
+# ================================
+# Logs & Debug Files
+# ================================
+
+# Log files
+*.log
+logs/
+debug.log
+error.log
+
+# Processing logs
+*_canonicalization.log
+*_processing.log
+*_debug.log
+
+# ================================
+# System & IDE Files
+# ================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Linux
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+# ================================
+# IDE & Editor Files
+# ================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+
+# Auto-generated tag files
+tags
+
+# TAGS
+TAGS
+
+# Atom
+.atom/
+
+# ================================
+# Google Colab Specific
+# ================================
+
+# Colab temporary files
+sample_data/
+content/
+
+# Drive mounts
+drive/
+gdrive/
+
+# Colab notebooks (if storing locally)
+*.ipynb
+
+# Except example notebooks
+!example*.ipynb
+!tutorial*.ipynb
+!demo*.ipynb
+
+# ================================
+# Documentation & Misc
+# ================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Except distribution archives
+!dist/*.zip
+!release/*.zip
+
+# ================================
+# Performance & Monitoring
+# ================================
+
+# Performance profiling
+*.prof
+*.profile
+profiling/
+
+# Memory dumps
+*.dump
+*.dmp
+
+# ================================
+# Configuration Overrides
+# ================================
+
+# Local configuration overrides
+config.local.py
+settings.local.py
+local_config.py
+
+# Development configuration
+dev_config.py
+test_config.py
+
+# ================================
+# Database Files (if any)
+# ================================
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Database dumps
+*.sql
+
+# ================================
+# Custom Project Exclusions
+# ================================
+
+# Large processed datasets (comment out if you want to track these)
+# final_merged_*.csv
+# canonical_*.csv
+# *_processed.xlsx
+
+# Test data directories
+test_data/
+sample_charts/
+
+# Experimental code
+experiments/
+sandbox/
+playground/
+
+# Old versions
+old/
+archive/
+deprecated/
+
+# Personal notes and drafts
+notes/
+drafts/
+TODO.txt
+NOTES.md
+
+# Client-specific data (if working with client data)
+client_data/
+confidential/
+private/
+
+# ================================
+# Keep Important Files
+# ================================
+
+# Force include important configuration templates
+!config.template.py
+!settings.template.py
+!.env.example
+!requirements*.txt
+!Pipfile
+!pyproject.toml
+!setup.py
+!setup.cfg
+
+# Force include documentation
+!README.md
+!CHANGELOG.md
+!LICENSE
+!CONTRIBUTING.md
+!docs/
+
+# Force include example data (small samples)
+!examples/
+!samples/
+!templates/
+
+# Force include GitHub workflows
+!.github/

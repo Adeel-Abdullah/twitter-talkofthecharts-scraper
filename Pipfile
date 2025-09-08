@@ -1,0 +1,41 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://www.paddlepaddle.org.cn/packages/stable/cpu/"
+verify_ssl = true
+name = "wwwpaddlepaddleorg"
+
+[[source]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+name = "pypitunatsinghuaedu"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu121"
+verify_ssl = true
+name = "downloadpytorch"
+
+[[source]]
+url = "https://download.pytorch.org/whl/"
+verify_ssl = true
+name = "downloadpytorch-616"
+
+[packages]
+twikit = "*"
+aiohttp = {extras = ["speedups"], version = "*"}
+python-dotenv = "*"
+python-doctr = {extras = ["torch"], version = "*"}
+matplotlib = "*"
+pandas = "*"
+openpyxl = "*"
+mplcursors = "*"
+torch = {version = "==2.6.0+cu118", index = "downloadpytorch-616"}
+pipenv = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
